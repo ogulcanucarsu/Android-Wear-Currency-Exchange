@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_grey"
+    android:background="#FF5722"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".ui.MainActivity"
     tools:deviceIds="wear">
@@ -20,15 +20,15 @@
             android:id="@+id/linearLayoutDollar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2.5dp"
             android:gravity="center"
+            android:layout_marginStart="2.5dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_dollar" />
+                android:src="@drawable/ic_currency_usd" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -36,6 +36,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Dolar"
                 android:textAllCaps="false"
+                android:textColor="#fff"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -51,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_money" />
+                android:src="@drawable/ic_currency_euro" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -59,6 +60,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Euro"
                 android:textAllCaps="false"
+                android:textColor="#fff"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -74,13 +76,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_gold" />
+                android:src="@drawable/ic_currency_gold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="Altın"
+                android:textColor="#fff"
                 android:textAllCaps="false"
                 android:textSize="20sp" />
 

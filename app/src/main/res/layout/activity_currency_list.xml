@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_grey"
+    android:background="#FF5722"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".ui.CurrencyListActivity"
     tools:deviceIds="wear">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="@dimen/inner_frame_layout_padding"
         app:boxedEdges="all">
 
@@ -19,17 +20,24 @@
             android:id="@+id/textViewHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|center"/>
+            android:layout_gravity="top|center"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="4dp"
+            android:background="#fff" />
 
         <androidx.wear.widget.WearableRecyclerView
             android:id="@+id/bankRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:scrollbars="vertical">
 
         </androidx.wear.widget.WearableRecyclerView>
 
-    </FrameLayout>
+    </LinearLayout>
 
 </androidx.wear.widget.BoxInsetLayout>

@@ -15,16 +15,19 @@
         <TextView
             android:id="@+id/textViewBankName"
             android:layout_width="wrap_content"
+            android:textColor="#fff"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/textViewBuyPrice"
             android:layout_width="wrap_content"
+            android:textColor="#fff"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/textViewSellPrice"
             android:layout_width="wrap_content"
+            android:textColor="#fff"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>

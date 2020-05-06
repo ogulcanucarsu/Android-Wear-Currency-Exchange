@@ -44,7 +44,7 @@ class CurrencyListAdapter(
     ) {
         dataSource?.let {
             val dataProvider = dataSource!![position]
-            holder.bankName.text = "Banka Adı: ${dataProvider.bankName}"
+            holder.bankName.text = "${dataProvider.bankName}"
             holder.buyPrice.text = "Banka Alış: ${dataProvider.buyPrice}"
             holder.sellPrice.text = "Banka Satış: ${dataProvider.sellPrice}"
         }
