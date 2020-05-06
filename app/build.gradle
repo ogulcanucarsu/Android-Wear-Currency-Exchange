@@ -31,6 +31,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.wear:wear:1.0.0'
     compileOnly 'com.google.android.wearable:wearable:2.6.0'
+    implementation 'com.airbnb.android:lottie:3.0.1'
 
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'

@@ -2,6 +2,7 @@ package org.ucarsu.bankexchangeinformation.ui
 
 import android.os.Bundle
 import android.support.wearable.activity.WearableActivity
+import android.view.View
 import androidx.wear.widget.WearableLinearLayoutManager
 import kotlinx.android.synthetic.main.activity_currency_list.*
 import org.ucarsu.bankexchangeinformation.R
@@ -55,6 +56,8 @@ class CurrencyListActivity : WearableActivity() {
             ) {
                 response?.body()?.let { priceBankList ->
                     setBankList(priceBankList)
+                } ?: kotlin.run {
+                   showError()
                 }
             }
 
@@ -62,7 +65,7 @@ class CurrencyListActivity : WearableActivity() {
                 call: Call<PriceBankList?>?,
                 t: Throwable?
             ) {
-                //no-op
+               showError()
             }
         })
         setAmbientEnabled()
@@ -76,5 +79,12 @@ class CurrencyListActivity : WearableActivity() {
                     priceBankList.data
                 )
         }
+    }
+
+    private fun showError() {
+        textViewHeader.visibility = View.GONE
+        linearLayoutLine.visibility = View.GONE
+        bankRecyclerView.visibility = View.GONE
+        lottieAnimation.visibility = View.VISIBLE
     }
 }
